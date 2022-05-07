@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Market</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" class="active"><a href="/userHome">Dashboard</a></li>
+					<li role="presentation"><a href="/shopNow">ShopNow</a></li>
+					<li role="presentation"><a href="/myCart">MyCart</a></li>
+					<li role="presentation"><a href="/myCart">MyOrders</a></li>
+                    <li role="presentation"><a href="/logout">Log Out</a></li>
+                </ul>
+            </nav>
+           <img src="/static/images/newone.jpg" alt="Shopping" width="300" height="100"/ > 
+        </div>
+      <div class="jumbotron" style = "height:150px; width:100%; background-image:url('/static/images/dash.jpg'); ">
+        <h1><small> Welcome {{session.sessionusername}}</small></h1>
+      </div>   
+		<div class="abovefooter" style="background-image:url('/static/images/Innergif.gif'); 
+				height:360px; width:60%;  margin-left:270px;">
+        </div>
+        <footer class="footer">
+            <p></p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Market</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/static/js/signUp.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" ><a href="/">Home</a></li>
+                    <li role="presentation"><a href="/login">Sign In</a></li>
+                    <li role="presentation" class="active"><a href="/signUp">Sign Up</a></li>
+                </ul>
+            </nav>
+            <img src="/static/images/newone.jpg" alt="Shopping" width="300" height="100"/ > 
+        </div>
+      <div class="jumbotron" style = "height:400px; width:50%; background-image:url('/static/images/dash.jpg'); margin-top:50px; margin-left:300px;">
+        <h2>Welcome</h2>
+		<br>
+        <div id="message"></div>
+        <form class="form-signin">
+        <p><label for="inputName" class="sr-only">Name</label>
+        <input type="name" name="inputName" id="inputName" class="form-control" placeholder="Name" required autofocus></p>
+        <p><label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" name="inputEmail" id="inputEmail" class="form-control" placeholder="Email address" required autofocus></p>
+        <p><label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="Password" required></p>
+        <p><button id="btnSignUp" class="btn btn-lg btn-primary btn-block" type="button">Sign up</button></p>
+		<p style="font-size:15px;">If you are new customer..... :)</p>
+      </form>
+      </div>
+      <footer class="footer">
+         <p></p>
+      </footer>
+    </div>
+<style>
+#message h3 {
+    border:1px #a81b2f solid;padding:5px;
+}
+</style>  
+  </body>
+</html>
